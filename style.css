@@ -1,0 +1,186 @@
+
+
+header{
+    background-color:darkslategray;
+    position:fixed;
+    height: 75px;
+    width:1560px;
+    left:0px;
+    top:0px;
+    z-index:2;
+    filter:opacity(90%); 
+    color:whitesmoke;
+    font-size:30px;
+    font-family:"verdana";
+    text-decoration: underline;
+      align-items: center;
+    align-content: center;
+  
+    
+}
+
+header b{
+    padding:2em;
+    transition:0.5s
+}
+img{
+    filter:opacity(50%);
+    position: absolute;
+    left:350px;
+    
+    
+}
+.image1{
+    position: absolute;
+    font-size:2.2em;
+    font-family:"garamond";
+    color:darkslategray;
+    font-weight:bold;   
+}
+.image1paragraph{
+    position:absolute;
+    left:360px;
+    top:310px;
+    width:500px;
+} 
+
+
+.footer{
+    background-color:darkslategrey;
+    color:white;
+    font-size: 2em;
+    width:100%;
+    height:3em;
+    top:50px;
+    left:0px;
+    font-family:"verdana";
+    text-decoration: underline;
+    align-items: center;
+    align-content: center;
+    
+}
+.footer a{
+    margin:35px;
+}
+
+
+
+
+
+
+/*Gives the arrow their large size and interactivity, and prevents them from being dragged for
+ALL browsers*/
+
+
+.leftarrow:hover{
+    font-size:235px;
+    top:-60px;
+}
+.leftarrow{
+    transition:0.5s;
+    font-size:195px;
+    font-weight:bolder;
+    position:absolute;
+    left:150px;
+    top:0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none;
+        -ms-user-select: none; 
+            user-select: none; 
+    
+    
+}
+
+
+
+.rightarrow:hover{
+    position:absolute;
+    font-size:235px;
+    top:-60px;
+}
+.rightarrow{
+    transition:0.5s;
+    font-size:195px;
+    font-weight:bolder;
+    position:absolute;
+    left:1250px;
+    top:0px;
+    -webkit-touch-callout: none; /* No select*/
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none;
+        -ms-user-select: none; 
+            user-select: none; 
+    
+    
+} 
+
+
+form {
+    margin-top: 20rem;
+    width: 100%;
+    display: flex;
+    background-color: darkslategrey;
+    color:whitesmoke;
+    font-family: Verdana;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+    }
+    
+    .EVC__Form-Container__Left {
+    width: 50%;
+    }
+    
+    .EVC__Form-Container__Left h2 {
+    text-align: center;
+    font-size: 4rem;
+    color: whitesmoke;
+    }
+    
+    .EVC__Form-Container__Left #FirstName,
+    .EVC__Form-Container__Left #LastName,
+    .EVC__Form-Container__Left #email,
+    .EVC__Form-Container__Left #YearLevel {
+    padding: 1rem;
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px #000 solid;
+    margin-top: 1rem;
+    height: 1.5rem;
+    border-radius: 3px;
+    background-color: transparent;
+    color: whitesmoke;
+    }
+    
+    .EVC__Form-Container__Left #FirstName::placeholder,
+    .EVC__Form-Container__Left #LastName::placeholder,
+    .EVC__Form-Container__Left #email::placeholder,
+    .EVC__Form-Container__Left #YearLevel::placeholder {
+    color: whitesmoke;
+    }
+    
+    .EVC__Form-Container__Left #submit {
+    width: 80%;
+    height: 3.5rem;
+    color: black;
+    background-color: whitesmoke;
+    border: 2px #000 solid;
+    border-radius: 25px;
+    font-size: 1.5em;  
+    font-weight: bold;
+    margin-left: 10%;
+    margin-top: 1rem;
+    transition: all 0.3s ease 0s;
+    }
+    
+    .EVC__Form-Container__Left #submit:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    }
+    
+ 
