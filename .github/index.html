@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>҉̧͠͏̶̸̢̀́́͘̕͡͞͝͏̹̹̰̼̥͇̳͓͖̠̹̺̜̪͕̜̞̠͓̭̦̺̯̫͚͖̣͙͔̯̳̥̥̦̤̘̜̹̳̦̫̹̱̟͔͚͔̳̰̲̙̭͚̮͇̬͎̜̯̬̯̙͎͍͎̭̘̠̤̪̥̬̪̯͖̤̞̞͖̞̦̬̯̮͉͓̤̼̪̼̝̼̰͖͓͙̻̰̙̘-̐͆ͧͨͨͣ͌̾͂̉̑ͣͧ̊ͭͬ̒ͪͭ͒̑̍ͧ̑͗̊̈́ͮͣ̔ͩ̓̊́̍̽̓̽̾̐̽ͯͫ͋̾̀̇͂̅ͩ̋̐̑ͧ͑ͨ͊͊ͨ̅͂̎̆͛̓̒͊ͯ̀͛̂̃̃̾̚̚̚̚̚</title>
+
+
+
+
+</head>
+
+<!--Main content-->
+
+
+<body>
+    <header>
+       <span class="header-text"> 
+           <b class="IntroductionClick">Introduction</b>
+            <b class="Test2">Test2</b>
+        </span>
+    </header>
+
+    <div class="image1">
+        <img class = "mainImage"src="https://i.ibb.co/rM97HF5/DITM-Antarctica-Melting.jpg" width="824" height="520" title="Antarctica melting">  
+        <p class="image1paragraph"></p>
+    </div>
+
+    <p class="leftarrow"> </p>
+    <p class="rightarrow"> </p>
+    
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<p class="mainText"></p>
+<div class="footer" style="color:whitesmoke;">
+    <a href="faq.html" style="color:whitesmoke;">FAQ</a>  
+    <a>Contact</a>  
+</div>
+<!-- Form HTML code -->
+<form>
+    <div class="EVC__Form-Container__Left">
+    <!-- TITLE -->
+    <h2>Sign Up for our newsletter!</h2>
+    
+    <!-- FIRST NAME -->
+    <input
+    id="FirstName"
+    type="text"
+    placeholder="Enter first name"
+    name="name"
+    />
+    
+    <!-- LAST NAME -->
+    <input
+    id="LastName"
+    type="text"
+    placeholder="Enter last Name"
+    name="name"
+    />
+    
+    <!-- YEAR LEVEL -->
+    <input
+    id="YearLevel"
+    type="number"
+    placeholder="Enter year level 1-13"
+    name="YearLevel"
+    min="1"
+    max="13"
+    />
+    
+    <!-- EMAIL -->
+    <input
+    type="text"
+    id="email"
+    placeholder="Enter Email"
+    name="email"
+    />
+    
+    <!-- Submit -->
+    <input id="submit" type="submit" />
+    </div>
+    </form>
+</body>
+</html>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+
+<script>
+
+
+/*  All variables, and image attribrutes for slideshow    */
+
+var images = ["https://i.ibb.co/rM97HF5/DITM-Antarctica-Melting.jpg","s.jpg","ss.jpg"]
+var imageTitles=["Antarctica melting","idk","I Really Don't have a clue"]
+var quotes  =["Air pollution is contributing to climate change, which has caused Antarctica to melt over <b style='color:darkred'>3 trillion tons</b> of ice.","I'll put something here later (1st)","I'll put something here later (2nd)"]
+var len = images.length
+var x=0 
+
+/* Makes the individual headers grow when hovered over */
+
+$("header b").on("mouseover",function(){
+    $(this).css("font-size","40px");
+    $(this).css("padding","1em");
+
+    
+})
+$("header b").on("mouseout",function(){
+    $(this).css("font-size","30px");
+    $(this).css("padding","2em") ; 
+})
+    
+
+
+
+
+
+/*Set the image attribrutes to the first value*/
+$(".mainImage").attr("src",images[x])
+$(".image1paragraph").html(quotes[x])
+
+
+/*Set the image arrows' html as '< >' , because I don't know how to without inadvertenly making a tag */    
+$(".leftarrow").html("<")
+$(".rightarrow").html(">")
+
+
+/*the event listeners for changing the image when the arrows are clicked*/
+$(".rightarrow").on("click",function(){
+    if(x<len-1){x+=1}
+    $(".mainImage").attr("src",images[x])
+    $(".mainImage").attr("title",imageTitles[x])
+    $(".image1paragraph").html(quotes[x])
+
+})
+$(".leftarrow").on("click",function(){
+    if(x>0){x-=1} 
+    $(".mainImage").attr("src",images[x])
+    $(".mainImage").attr("title",imageTitles[x]) 
+    $(".image1paragraph").html(quotes[x])
+
+})
+    
+</script>
