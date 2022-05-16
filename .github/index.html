@@ -34,55 +34,12 @@
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-<p class="mainText"></p>
+
 <div class="footer" style="color:whitesmoke;">
     <a href="faq.html" style="color:whitesmoke;">FAQ</a>  
     <a>Contact</a>  
 </div>
-<!-- Form HTML code -->
-<form>
-    <div class="EVC__Form-Container__Left">
-    <!-- TITLE -->
-    <h2>Sign Up for our newsletter!</h2>
-    
-    <!-- FIRST NAME -->
-    <input
-    id="FirstName"
-    type="text"
-    placeholder="Enter first name"
-    name="name"
-    />
-    
-    <!-- LAST NAME -->
-    <input
-    id="LastName"
-    type="text"
-    placeholder="Enter last Name"
-    name="name"
-    />
-    
-    <!-- YEAR LEVEL -->
-    <input
-    id="YearLevel"
-    type="number"
-    placeholder="Enter year level 1-13"
-    name="YearLevel"
-    min="1"
-    max="13"
-    />
-    
-    <!-- EMAIL -->
-    <input
-    type="text"
-    id="email"
-    placeholder="Enter Email"
-    name="email"
-    />
-    
-    <!-- Submit -->
-    <input id="submit" type="submit" />
-    </div>
-    </form>
+
 </body>
 </html>
 
@@ -113,8 +70,19 @@ $("header b").on("mouseout",function(){
     $(this).css("font-size","30px");
     $(this).css("padding","2em") ; 
 })
+
     
 
+$(".footer a").on("mouseover",function(){
+    $(this).css("font-size","40px");
+    $(this).css("padding","1em");
+
+    
+})
+$(".footer a").on("mouseout",function(){
+    $(this).css("font-size","30px");
+    $(this).css("padding","2em") ; 
+})
 
 
 
