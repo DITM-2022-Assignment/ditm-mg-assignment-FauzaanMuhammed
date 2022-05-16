@@ -61,6 +61,7 @@ img{
 }
 .footer a{
     margin:35px;
+    transition: 0.5s;
 }
 
 
