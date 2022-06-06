@@ -88,7 +88,7 @@ ALL browsers*/
     font-size:195px;
     font-weight:bolder;
     position:absolute;
-    left:150px;
+    left:10vw;
     top:0px;
     -webkit-touch-callout: none;
     -webkit-user-select: none; 
@@ -112,7 +112,7 @@ ALL browsers*/
     font-size:195px;
     font-weight:bolder;
     position:absolute;
-    left:1250px;
+    left:87vw;
     top:0px;
     -webkit-touch-callout: none; /* No select*/
     -webkit-user-select: none; 
