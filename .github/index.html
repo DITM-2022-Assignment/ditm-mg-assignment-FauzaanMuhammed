@@ -20,6 +20,7 @@
        <span class="header-text"> 
            <b class="IntroductionClick">Introduction</b>
             <b class="Test2">Test2</b>
+            <b class="darkTheme">Dark Theme</b>
         </span>
     </header>
 
@@ -59,6 +60,9 @@ var len = images.length
 var x=0 
 
 /* Makes the individual headers grow when hovered over */
+$(".darktheme").on("click",function(){
+    $(body).css()
+})
 
 $("header b").on("mouseover",function(){
     $(this).css("font-size","35px");
