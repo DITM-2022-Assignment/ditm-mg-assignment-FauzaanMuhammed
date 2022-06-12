@@ -1,10 +1,10 @@
 
 body{
-    /*background-color: rgb(44, 41, 41);*/
+    background-color: rgb(44, 41, 41);
 }
 
 header{
-    background-color:darkslategray;
+    /*background-color:rgb(25, 26, 25);
     position:fixed;
     height: 75px;
     width:1560px;
@@ -16,7 +16,7 @@ header{
     font-size:30px;
     font-family:"verdana";
     text-decoration: underline;
-    display: flex;
+    display: flex;*/
  
   
     
@@ -30,7 +30,7 @@ img{
     filter:opacity(50%);
     position: absolute;
     left:350px;
-    /*box-shadow: 0px 0px 1200px 120px cyan;*/
+    box-shadow: 0px 0px 120px 1px red;
 
     
     
@@ -39,19 +39,20 @@ img{
     position: absolute;
     font-size:2.2em;
     font-family:"garamond";
-    color:darkslategray;
-    font-weight:bold;   
+    color:whitesmoke;
+    font-weight:bold; 
+    text-shadow: 2px 2px darkred;
 }
 .image1paragraph{
     position:absolute;
     left:360px;
     top:310px;
-    width:500px;
+    width:450px;
 } 
 
 
 .footer{
-    background-color:darkslategrey;
+    background-color:rgb(26, 25, 25);
     color:white;
     font-size: 2em;
     width:100%;
@@ -90,6 +91,7 @@ ALL browsers*/
     position:absolute;
     left:10vw;
     top:0px;
+
     -webkit-touch-callout: none;
     -webkit-user-select: none; 
      -khtml-user-select: none; 
