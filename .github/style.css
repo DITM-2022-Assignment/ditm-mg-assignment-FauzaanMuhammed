@@ -3,8 +3,13 @@ body{
     background-color: rgb(44, 41, 41);
 }
 
+header a:hover{
+    text-decoration: underline; 
+
+}
+
 header{
-    /*background-color:rgb(25, 26, 25);
+    background-color:rgb(25, 26, 25);
     position:fixed;
     height: 75px;
     width:1560px;
@@ -15,16 +20,32 @@ header{
     color:whitesmoke;
     font-size:30px;
     font-family:"verdana";
-    text-decoration: underline;
-    display: flex;*/
+    display: flex;
  
-  
-    
 }
 
-header b{
+.introduction{
+    color:white;
+    font-family: verdana;
+    font-size: 2.4em;
+    text-align: center;
+    text-shadow:1.5px 1.5px red;
+}
+.bodyParagraph1{
+    color:white;
+    font-family: verdana;
+    font-size: 1.2em;
+    text-align: center;
+    text-shadow:1px 1px red;
+    width:750px;
+    position:absolute;
+    left:250px;
+}
+
+header a{
     padding:2em;
-    transition:0.5s
+    transition:0.5s;
+    position:absolute;
 }
 img{
     filter:opacity(50%);
