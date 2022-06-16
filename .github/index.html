@@ -18,8 +18,8 @@
 <body>
     <header>
        <span class="header-text"> 
-        <a href="faq.html" style="color:whitesmoke;left:100px;top:-40px;">FAQ</a>  
-        <a style="left:300px;top:-40px;">Contact</a>  
+        <a style="left:100px;top:-40px;color:whitesmoke" href="faq.html">FAQ</a>       
+        <a style="left:400px;top:-40px;">Contact</a>  
             
         </span>
     </header>
@@ -33,12 +33,11 @@
     <p class="rightarrow"style="color:white;"> </p>
     
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<div class="introduction">Our one and only Earth will be baked alive if we don't take action.</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="introduction">Our one and only Earth will be cooked alive if we don't take action.</div>
 <br><br>
-<div class="bodyParagraph1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel lacinia sem, quis viverra ex. Donec vel velit pulvinar, tincidunt lectus convallis, 
-    rhoncus ante. Maecenas a ultricies lorem, a sollicitudin purus. Quisque imperdiet neque quis libero mattis euismod. Maecenas rutrum velit nec dui ornare, eget interdum lacus 
-    convallis. Morbi mattis fringilla ligula in imperdiet. Vestibulum facilisis turpis est. Ut varius a est ac lobortis. Fusce eros erat, consectetur id congue et, scelerisque non nibh.</div>
+<div class="bodyParagraph1"></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/G4H1N_yXBiA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute;left:30vw;"></iframe>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <div class="footer" style="color:whitesmoke;"> 
 </div>
@@ -55,7 +54,7 @@
 
 /*  All variables, and image attribrutes for slideshow    */
 
-var images = ["https://i.ibb.co/rM97HF5/DITM-Antarctica-Melting.jpg","https://pixfeeds.com/images/save-nature/1280-96680779-sea-storm-genoa.jpg","https://secureservercdn.net/198.71.233.129/22d.937.myftpupload.com/wp-content/uploads/2015/06/forest-fire-1024x576.jpg"]
+var images = ["https://i.ibb.co/rM97HF5/DITM-Antarctica-Melting.jpg","https://pixfeeds.com/images/save-nature/1280-96680779-sea-storm-genoa.jpg","https://secureservercdn.net/198.71.233.129/22d.937.myftpupload.com/wp-content/uploads/2015/06/forest-fire-1024x576.jpg"]/*The image sources for the slideshow */
 var imageTitles=["Antarctica melting","A city about to be flooded","A forest burning"]
 var quotes  =["Air pollution is contributing to climate change, which has caused Antarctica to melt over <b style='color:red'>3 trillion tons</b> of ice.","since 1870,  global sea levels have risen by about <b style='color:red'>8 inches.</b>","<b style='color:red'>150 Millon tons</b> of Carbon Dioxide has been released into the atmosphere because of forest fires. "]
 var len = images.length
@@ -107,6 +106,8 @@ $(".rightarrow").html(">")
 /*the event listeners for changing the image when the arrows are clicked*/
 $(".rightarrow").on("click",function(){
     if(x<len-1){x+=1}
+    else if(x==len-1){x=0}
+
     $(".mainImage").attr("src",images[x])
     $(".mainImage").attr("title",imageTitles[x])
     $(".image1paragraph").html(quotes[x])
@@ -114,6 +115,7 @@ $(".rightarrow").on("click",function(){
 })
 $(".leftarrow").on("click",function(){
     if(x>0){x-=1} 
+    else if(x==0){x=2}
     $(".mainImage").attr("src",images[x])
     $(".mainImage").attr("title",imageTitles[x]) 
     $(".image1paragraph").html(quotes[x])
