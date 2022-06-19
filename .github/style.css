@@ -1,5 +1,15 @@
 
+.homePageText{
+    color:whitesmoke;
+    font-size: 5em;
+    position: absolute;
+    left:500px;
+    top:0px;
+    font-family: verdana;
+    text-decoration: underline;
+}
 body{
+    /*Makes the background black*/
     background-color: rgb(44, 41, 41);
 }
 .faq:hover{
@@ -29,13 +39,15 @@ header{
 }
 
 .introduction{
+    /**/
     color:white;
     font-family: verdana;
     font-size: 2em;
     text-align: center;
     text-shadow: 1px 1px red;
 }
-.bodyParagraph1{
+.bodyParagraph{
+    /*Controls the text under the introduction*/
     color:white;
     font-family: verdana;
     font-size: 1.2em;
@@ -44,14 +56,16 @@ header{
     width:750px;
     position:absolute;
     left:250px;
+     
 }
 
 header a{
+    /*Gives each of the links 2em of seperation, so they aren't clumped up together */
     padding:2em;
-    transition:0.5s;
     position:absolute;
 }
 img{
+    /*Gives the image transparency for more focus on the quote, and a red glow*/
     filter:opacity(50%);
     position: absolute;
     left:350px;
@@ -61,6 +75,7 @@ img{
     
 }
 .image1{
+    /*The CSS that controls the quotes on the images*/
     position: absolute;
     font-size:2.2em;
     font-family:"garamond";
@@ -68,7 +83,8 @@ img{
     font-weight:bold; 
     text-shadow: 2px 2px darkred;
 }
-.image1paragraph{
+.quoteParagraph{
+    /*Moves the image quotes onto image, and make the text loop.*/
     position:absolute;
     left:360px;
     top:310px;
@@ -92,22 +108,15 @@ img{
     
 }
 .footer a{
+    /*Seperates each individual link by 35 px left and right, so they aren't bunched up together*/
     margin:35px;
     transition: 0.5s;
 }
 
 
-
-
-
-
-/*Gives the arrow their large size and interactivity, and prevents them from being dragged for
-ALL browsers*/
-
-
 .leftarrow:hover{
     font-size:235px;
-    top:-60px;
+    top:80px;
 }
 .leftarrow{
     transition:0.5s;
@@ -115,8 +124,9 @@ ALL browsers*/
     font-weight:bolder;
     position:absolute;
     left:10vw;
-    top:0px;
-
+    top:130px;
+/*Gives the arrow their large size and interactivity, and prevents them from being dragged for
+ALL browsers*/
     -webkit-touch-callout: none;
     -webkit-user-select: none; 
      -khtml-user-select: none; 
@@ -132,7 +142,7 @@ ALL browsers*/
 .rightarrow:hover{
     position:absolute;
     font-size:235px;
-    top:-60px;
+    top:80px;
 }
 .rightarrow{
     transition:0.5s;
@@ -140,8 +150,8 @@ ALL browsers*/
     font-weight:bolder;
     position:absolute;
     left:87vw;
-    top:0px;
-    -webkit-touch-callout: none; /* No select*/
+    top:130px;
+    -webkit-touch-callout: none; /* Same as left arrow*/
     -webkit-user-select: none; 
      -khtml-user-select: none; 
        -moz-user-select: none;
