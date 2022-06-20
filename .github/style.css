@@ -19,7 +19,8 @@ header a:hover{
     text-decoration: underline;
 
 }
-a{
+a{ /*Removes the default underline that A tags/links are given, so my hover animations 
+    that include underline works*/
     text-decoration: none;
 }
 header{
@@ -74,7 +75,7 @@ img{
     
     
 }
-.image1{
+.quoteParagraph{
     /*The CSS that controls the quotes on the images*/
     position: absolute;
     font-size:2.2em;
@@ -87,7 +88,7 @@ img{
     /*Moves the image quotes onto image, and make the text loop.*/
     position:absolute;
     left:360px;
-    top:310px;
+    top:460px;
     width:450px;
 } 
 
@@ -114,17 +115,17 @@ img{
 }
 
 
-.leftarrow:hover{
-    font-size:235px;
-    top:80px;
+.leftarrow:hover{ /*A pseudo element which controls enlarging the arrow when hovered on.*/ 
+    font-size:128px;
+    top:218px;
 }
 .leftarrow{
     transition:0.5s;
-    font-size:195px;
+    font-size:100px;
     font-weight:bolder;
     position:absolute;
-    left:10vw;
-    top:130px;
+    left:5vw;
+    top:260px;
 /*Gives the arrow their large size and interactivity, and prevents them from being dragged for
 ALL browsers*/
     -webkit-touch-callout: none;
@@ -139,19 +140,19 @@ ALL browsers*/
 
 
 
-.rightarrow:hover{
+.rightarrow:hover{ /*A pseudo element which controls enlarging the arrow when hovered on.*/
     position:absolute;
-    font-size:235px;
-    top:80px;
+    font-size:128px;
+    top:218px;
 }
 .rightarrow{
     transition:0.5s;
-    font-size:195px;
+    font-size:100px;
     font-weight:bolder;
     position:absolute;
     left:87vw;
-    top:130px;
-    -webkit-touch-callout: none; /* Same as left arrow*/
+    top:260px;
+    -webkit-touch-callout: none; /* Same un-selectable property as left arrow*/
     -webkit-user-select: none; 
      -khtml-user-select: none; 
        -moz-user-select: none;

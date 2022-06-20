@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"><!--The CSS stylesheet link-->
     <title>҉̧͠͏̶̸̢̀́́͘̕͡͞͝͏̹̹̰̼̥͇̳͓͖̠̹̺̜̪͕̜̞̠͓̭̦̺̯̫͚͖̣͙͔̯̳̥̥̦̤̘̜̹̳̦̫̹̱̟͔͚͔̳̰̲̙̭͚̮͇̬͎̜̯̬̯̙͎͍͎̭̘̠̤̪̥̬̪̯͖̤̞̞͖̞̦̬̯̮͉͓̤̼̪̼̝̼̰͖͓͙̻̰̙̘-̐͆ͧͨͨͣ͌̾͂̉̑ͣͧ̊ͭͬ̒ͪͭ͒̑̍ͧ̑͗̊̈́ͮͣ̔ͩ̓̊́̍̽̓̽̾̐̽ͯͫ͋̾̀̇͂̅ͩ̋̐̑ͧ͑ͨ͊͊ͨ̅͂̎̆͛̓̒͊ͯ̀͛̂̃̃̾̚̚̚̚̚</title>
 
 
@@ -18,27 +18,36 @@
 <body>
     <header>
        <span class="header-text"> 
-        <a style="left:100px;top:-40px;color:whitesmoke" href="faq.html">FAQ</a>       
-        <a style="left:400px;top:-40px;">Contact</a>  
-            
+        <a style="left:50px;top:-40px;color:whitesmoke;font-weight:bolder;" title="You are currently at the home page">Home Page</a>       
+        <a style="left:400px;top:-40px;color:whitesmoke;"href="faq.html">FAQ</a>  <!--All the header links-->
+        <a style="left:700px;top:-40px;">Contact</a>    
         </span>
     </header>
 
+    <p class="homePageText">Home Page</p>
+    <br><br><br><br><br><br><br><br><br><!--Line breaks for seperate the image and Home Page text-->
+
     <div class="image1">
-        <img class = "mainImage"src="https://i.ibb.co/rM97HF5/DITM-Antarctica-Melting.jpg" width="824" height="520"style="width:64.375vw;height:82vh;left:20vw;"title="Antarctica melting">  
-        <p class="image1paragraph"></p>
+        <img class = "mainImage"src="https://i.ibb.co/rM97HF5/DITM-Antarctica-Melting.jpg" width="824" height="520"style="width:64.375vw;height:82vh;left:17vw;"title="Antarctica melting">  
+        <p class="quoteParagraph"></p>   <!--The image and quote-->
     </div>
 
     <p class="leftarrow" style="color:white;"> </p>
     <p class="rightarrow"style="color:white;"> </p>
     
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+<!--Line breaks to seperate the image from the introduction and text-->
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 <div class="introduction">Our one and only Earth will be cooked alive if we don't take action.</div>
 <br><br>
-<div class="bodyParagraph1"></div>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/G4H1N_yXBiA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute;left:30vw;"></iframe>
+<div class="bodyParagraph"></div>
+
+<!--The youtube video-->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/G4H1N_yXBiA"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute;left:30vw;"></iframe>
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 <div class="footer" style="color:whitesmoke;"> 
 </div>
 
@@ -48,54 +57,26 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
-
+<!--JQuery script-->
 <script>
 
 
-/*  All variables, and image attribrutes for slideshow    */
+/*  Arrays that have the image sources, the quotes and tooltips. 
+    Gets cycled through when the arrows are pressed   */
 
 var images = ["https://i.ibb.co/rM97HF5/DITM-Antarctica-Melting.jpg","https://pixfeeds.com/images/save-nature/1280-96680779-sea-storm-genoa.jpg","https://secureservercdn.net/198.71.233.129/22d.937.myftpupload.com/wp-content/uploads/2015/06/forest-fire-1024x576.jpg"]/*The image sources for the slideshow */
 var imageTitles=["Antarctica melting","A city about to be flooded","A forest burning"]
 var quotes  =["Air pollution is contributing to climate change, which has caused Antarctica to melt over <b style='color:red'>3 trillion tons</b> of ice.","since 1870,  global sea levels have risen by about <b style='color:red'>8 inches.</b>","<b style='color:red'>150 Millon tons</b> of Carbon Dioxide has been released into the atmosphere because of forest fires. "]
 var len = images.length
-var x=0 
-
-/* Makes the individual headers grow when hovered over */
-/*$(".darktheme").on("click",function(){
-    $(body).css()
-})
-
-$("header b").on("mouseover",function(){
-    $(this).css("font-size","35px");
-    $(this).css("padding","1em");
-
-    
-})
-$("header b").on("mouseout",function(){
-    $(this).css("font-size","30px");
-    $(this).css("padding","2em") ; 
-})
-
-    
-
-$(".footer a").on("mouseover",function(){
-    $(this).css("font-size","35px");
-    $(this).css("padding","1em");
-
-    
-})
-$(".footer a").on("mouseout",function(){
-    $(this).css("font-size","30px");
-    $(this).css("padding","2em") ; 
-})
-*/
+var x=2 
 
 
 
 
-/*Set the image attribrutes to the first value*/
+/*Set the image attribrutes to x, which is 2. which means the forest fire background 
+will be displayed first*/
 $(".mainImage").attr("src",images[x])
-$(".image1paragraph").html(quotes[x])
+$(".quoteParagraph").html(quotes[x])
 
 
 /*Set the image arrows' html as '< >' , because I don't know how to without inadvertenly making a tag */    
@@ -103,22 +84,27 @@ $(".leftarrow").html("<")
 $(".rightarrow").html(">")
 
 
-/*the event listeners for changing the image when the arrows are clicked*/
+/*the event listeners for changing the image via cycling through the arrays, which contain 
+the quote, image sources and tooltips
+    when the arrows are clicked*/
 $(".rightarrow").on("click",function(){
     if(x<len-1){x+=1}
-    else if(x==len-1){x=0}
+    else if(x==len-1){x=0}/*If the right arrow is pressed at the end of the slideshow,
+     go to the beginning of the slideshow*/
 
     $(".mainImage").attr("src",images[x])
     $(".mainImage").attr("title",imageTitles[x])
-    $(".image1paragraph").html(quotes[x])
+    $(".quoteParagraph").html(quotes[x])
 
 })
 $(".leftarrow").on("click",function(){
     if(x>0){x-=1} 
-    else if(x==0){x=2}
+    else if(x==0){x=2}/*If the left arrow is pressed at the start of the slideshow,
+    go to the beginning fo the slideshow.
+    */
     $(".mainImage").attr("src",images[x])
     $(".mainImage").attr("title",imageTitles[x]) 
-    $(".image1paragraph").html(quotes[x])
+    $(".quoteParagraph").html(quotes[x])
 
 })
     
